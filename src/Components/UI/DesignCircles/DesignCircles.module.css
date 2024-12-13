@@ -1,0 +1,341 @@
+.containerbg1 {
+    position: absolute;
+    z-index: -200;
+    top: -1259px;
+    user-select: none;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 2028px;
+    height: 2028px;
+    background: url('../../../Assets/Images/Ellipse1.png');
+    animation: rotate 270s infinite linear;
+}
+.portal{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    animation: anti-rotate 270s infinite linear;
+}
+
+.p1{
+    top: 1981px;
+    right: 743px;
+}
+.p2{
+    top: 1971px;
+    right: 707px;
+}
+.p3{
+    top: 1921px;
+    right: 569px;
+}
+.p4{
+    top: 1753px;
+    right: 322px;
+}
+.p5{
+    top: 1616px;
+    right: 196px;
+}
+.p6{
+    top: 1921px;
+    right: 569px;
+}
+.p7{
+    top: 1013px;
+    right: -12px;
+}
+.p8{
+    top: 908px;
+    right: -5px;
+}
+.p9{
+    top: 690px;
+    right: 40px;
+}
+.p10{
+    top: 480px;
+    right: 128px;
+    display: none;
+}
+.p11{
+    top: 365px;
+    right: 217px;
+}
+.p12{
+    top: 256px;
+    right: 317px;
+}
+.p13{
+    top: 193px;
+    right: 398px;
+}
+.p14{
+    top: 140px;
+    right: 464px;
+}
+.p15{
+    top: 10px;
+    right: 789px;
+}
+.p16{
+    top: 2px;
+    right: 848px;
+}
+.p17{
+    top: -10px;
+    right: 1082px;
+}
+.p18{
+    top: 10px;
+    right: 1212px;
+}
+.p19{
+    top: 65px;
+    right: 1388px;
+}
+.p20{
+    top: 128px;
+    right: 1511px;
+}
+.p21{
+    top: 291px;
+    right: 1725px;
+}
+.p22{
+    top: 389px;
+    right: 1812px;
+}
+.p23{
+    top: 537px;
+    right: 1904px;
+}
+.p24{
+    top: 490px;
+    right: 128px;
+}
+.p25{
+    top: 939px;
+    right: 2013px;
+}
+.p26{
+    top: 1121px;
+    right: 2008px;
+}
+.p27{
+    top: 1318px;
+    right: 1966px;
+}
+.p28{
+    top: 1459px;
+    right: 1905px;
+}
+.p29{
+    top: 1693px;
+    right: 1741px;
+}
+.p30{
+    top: 1976px;
+    right: 1283px;
+}
+.p31{
+    top: 16px;
+    right: 402px
+}
+.p32{
+    top: 55px;
+    right: 301px;
+}
+.p33{
+    top: 198px;
+    right: 127px;
+}
+.p34{
+    top: 624px;
+    right: -11px;
+}
+.p35{
+    top: 1010px;
+    right: 170px;
+}
+.p36{
+    top: 1091px;
+    right: 275px;
+}
+.p37{
+    top: 1150px;
+    right: 756px;
+}
+.p38{
+    top: 1011px;
+    right: 991px;
+}
+.p39{
+    top: 302px;
+    right: 1105px;
+}
+.p40{
+    top: 132px;
+    right: 969px;
+}
+.p41{
+    top: 241px;
+    right: 794px;
+}
+.p42{
+    top: 584px;
+    right: 1071px;
+}
+.p43{
+    top: 775px;
+    left: -8px;
+}
+.p44{
+    top: 1193px;
+    right: 1380px;
+}
+.p45{
+    top: 1074px;
+    right: 1070px;
+}
+.p46{
+    top: 1245px;
+    right: 660px;
+}
+.m1{
+    top: 533px;
+    right: -6px;
+}
+.m2{
+    top:338px;
+    left: 38px;
+}
+.m3{
+    top:1230px;
+    right: 942px;
+}
+.m4{
+    top:1458px;
+    left: 255px;
+}
+.m5{
+    top:35px;
+    right: 1313px;
+}
+.m6{
+    bottom: -11px;
+    left: 1048px;
+}
+.containerbg2 {
+    position: absolute;
+    z-index: -200;
+    top: 1564px;
+    user-select: none;
+    left: -374px;
+    width: 1187px;
+    height: 1187px;
+    background: url('../../../Assets/Images/Ellipse1.png');
+    animation: rotatemid 270s infinite linear;
+    background-size: contain;
+}
+.containerbg3 {
+    position: absolute;
+    z-index: -200;
+    top: 3531px;
+    user-select: none;
+    right:-650px;
+    width: 1958px;
+    height: 1690px;
+    animation: rotatemid 270s infinite linear;
+}
+.containerbg4 {
+    position: absolute;
+    z-index: -200;
+    top: 5960px;
+    user-select: none;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 2028px;
+    height: 2028px;
+    background: url('../../../Assets/Images/Ellipse1.png');
+    animation: rotate 270s infinite linear;
+}
+.total {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    overflow: hidden;
+    z-index: -100;
+}
+@keyframes rotate {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+@keyframes rotatemid {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes anti-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1399px) {
+    .containerbg2{
+        top: 1500px;
+    }
+    .containerbg3{
+        right: -800px;
+        top:3400px;
+    }
+    .containerbg4{
+        top: 5450px;
+    }
+}
+@media (min-width: 560px) and (max-width: 959px) {
+    .containerbg2{
+        top: 2300px;
+        left: -500px;
+        scale: 0.6;
+    }
+    .containerbg3{
+        right: -1100px;
+        top:3800px;
+        scale: 0.6;
+    }
+    .containerbg4{
+        top: 6350px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 559px) {
+    .containerbg1{
+        top:-680px
+    }
+    .containerbg2{
+        top: 2700px;
+        left: -650px;
+        scale: 0.6;
+    }
+    .containerbg3{
+        right: -1300px;
+        top:5500px;
+        scale: 0.6;
+    }
+    .containerbg4{
+        top: 9450px;
+    }
+}

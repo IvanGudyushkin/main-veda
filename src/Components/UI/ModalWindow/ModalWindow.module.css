@@ -1,0 +1,116 @@
+.modalBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: all 300ms ease-in-out;
+    visibility: hidden;
+}
+.modalBackground.active {
+    opacity: 1;
+    visibility: visible;
+}
+.modalContainer {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0.9);
+    transition: all 300ms ease-in-out;
+    position: relative;
+    z-index: 20000;
+    overflow: hidden;
+}
+.modalContainer.active {
+    transform: scale(1);
+}
+.planet {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 676px;
+}
+.planetName {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1.1;
+}
+.changeInfo {
+    display: flex;
+    gap: 20px;
+}
+.planetChange {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.1;
+    opacity: 0.6;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.planetChange.active{
+    opacity: 1;
+}
+.planetInfo{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.3;
+    white-space: pre-wrap;
+    min-height: 200px;
+    max-height: 700px;
+}
+.bg {
+    position: absolute;
+    z-index: -100;
+    left: -151px;
+    top:-232px;
+    opacity: 0.4;
+}
+.bgEllipse {
+    position: absolute;
+    z-index: -100;
+    top:-20px;
+    left: 0;
+}
+@media (min-width: 560px) and (max-width: 959px) {
+    .planet{
+        width: 480px;
+    }
+
+}
+@media (min-width: 320px) and (max-width: 559px) {
+    .modalContainer{
+        padding: 20px;
+        width: calc(100% - 80px);
+    }
+    .planet{
+        width: 100%;
+    }
+    .planetName{
+        font-size: 32px;
+    }
+    .planetChange{
+        font-size: 18px;
+    }
+    .planetInfo{
+        font-size: 16px;
+    }
+    .bg{
+        top:-50px;
+        left: -30px;
+    }
+    .bgEllipse{
+        top:20px;
+    }
+}

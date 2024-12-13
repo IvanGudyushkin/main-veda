@@ -1,0 +1,339 @@
+.block{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 1320px;
+    margin: 0 auto;
+}
+.row1{
+    display: flex;
+    gap:20px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 763px    ;
+}
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.description{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.15;
+    color: var(--tekst);
+    margin-bottom: 21px;
+}
+.goldDescription{
+    border-radius: 15px;
+    width: 762px;
+    height: 416px;
+    background: linear-gradient(212deg, #eec196 0%, #f3debc 25%, #fff8e8 50%, #f9edd2 75%, #dcb192 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 24px 20px;
+}
+.itemTitle{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.1;
+    background: linear-gradient(180deg, #000 0%, #000a2e 44.5%, #3b519e 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.ul1{
+    margin: 29px 0 35px 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.1;
+    color: var(--tekst);
+    display: flex;
+    flex-direction: column;
+    gap:14px;
+}
+.ul2{
+    margin-top:16px ;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.1;
+    color: var(--tekst);
+}
+.lotus:before{
+    content: url("../../Assets/Images/lotus.svg");
+}
+.lotus{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    height: 52px;
+}
+.li:before{
+    content: "— ";
+}
+.row2{
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.item{
+    border-radius: 15px;
+    padding: 20px;
+    width: 426px;
+    background: linear-gradient(212deg, #eec196 0%, #f3debc 25%, #fff8e8 50%, #f9edd2 75%, #dcb192 100%);
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    transition: ease-in-out 0.3s;
+}
+.item:hover {
+    scale: 1.05;
+    -webkit-box-shadow: rgba(241, 236, 229, 0.3960784314) 0px 0px 10px 0px;
+    box-shadow: 0px 6px 6px 0px rgba(98, 47, 0, 0.25);
+    user-select: none;
+    -moz-user-select: none; /* Для Firefox */
+    -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+    -ms-user-select: none; /* Для Internet Explorer/Edge */
+}
+.itemDescription{
+    width: 280px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.1;
+    color: var(--tekst);
+}
+.item .itemTitle{
+    width: 320px;
+}
+.button{
+    border-radius: 15px;
+    padding: 0;
+    border: none;
+    width: 426px;
+    height: 51px;
+    background: linear-gradient(212deg, #eec196 0%, #f3debc 25%, #fff8e8 50%, #f9edd2 75%, #dcb192 100%);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    font-size: 18px;
+    &:hover{
+        scale: 1.05;
+        -webkit-box-shadow: rgba(241, 236, 229, 0.3960784314) 0px 0px 10px 0px;
+        box-shadow: 0px 6px 6px 0px rgba(98, 47, 0, 0.25);
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+}
+.photo{
+    width: 538px;
+    position: relative;
+}
+.photo img{
+    width: 100%;
+    border-radius: 10px;
+}
+@media (min-width: 960px) and (max-width: 1399px) {
+    .block{
+        width: 880px;
+    }
+    .info{
+        width: 505px;
+    }
+    .photo {
+        width: 355px;
+    }
+    .photo img{
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+    }
+    .title{
+        font-size: 32px;
+    }
+    .description{
+        font-size: 16px;
+    }
+    .goldDescription{
+        width: 505px;
+        height: 324px;
+    }
+    .itemTitle{
+        font-size: 18px;
+
+    }
+    .ul1{
+        margin: 8px 0;
+        font-size: 18px;
+        gap: 4px;
+    }
+    .li{
+        font-size: 18px;
+    }
+    .ul2{
+        margin-top: 12px;
+    }
+    .item .itemTitle{
+        font-size: 18px;
+        width: fit-content;
+    }
+    .item {
+        width: 280px;
+    }
+    .itemDescription{
+        font-size: 18px;
+        width: fit-content;
+    }
+    .button{
+        width: 280px;
+    }
+}
+@media (min-width: 560px) and (max-width: 959px) {
+    .block{
+        width: 480px;
+    }
+    .row1{
+        flex-wrap: wrap;
+        gap:20px;
+    }
+    .info{
+        width: 230px;
+    }
+    .photo {
+        width: 230px;
+        height: 198px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .photo img{
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+    .title{
+        font-size: 18px;
+    }
+    .description{
+        font-size: 16px;
+        margin: 0;
+    }
+    .goldDescription{
+        width: 480px;
+        height: 282px;
+        padding: 20px 32px;
+    }
+    .goldDescription .itemTitle{
+        width: 421px;
+        height: 40px;
+        padding: 10px 0 ;
+    }
+    .itemTitle{
+        font-size: 18px;
+    }
+    .ul1{
+        margin: 20px 0 0 0;
+        font-size: 18px;
+        gap: 12px;
+    }
+    .lotus{
+        font-size: 16px;
+        gap: 66px;
+
+    }
+    .item .itemTitle{
+        font-size: 16px;
+        width: fit-content;
+    }
+    .item {
+        width: 230px;
+        padding: 15px;
+    }
+    .itemDescription{
+        font-size: 16px;
+        width: fit-content;
+    }
+    .button{
+        width: 230px;
+        height: 65px;
+    }
+}
+@media (min-width: 320px) and (max-width: 559px) {
+    .block{
+        width: calc(100% - 80px);
+        margin-top: 40px;
+    }
+    .row1{
+        flex-wrap: wrap;
+        gap:20px;
+    }
+    .info{
+        width: 100%;
+        position: relative;
+    }
+
+    .photo {
+        width: 240px;
+        height: 286px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .photo img{
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+    }
+    .title{
+        font-size: 18px;
+        position: absolute;
+        top:-346px
+    }
+    .description{
+        font-size: 16px;
+        margin: 0;
+    }
+    .goldDescription{
+        width: 100%;
+        height: auto;
+        padding: 20px 15px;
+    }
+    .goldDescription .itemTitle{
+        width: 100%;
+        height: auto;
+        padding: 10px 0 ;
+    }
+    .itemTitle{
+        font-size: 18px;
+    }
+    .ul1{
+        margin: 20px 0 0 0;
+        font-size: 18px;
+        gap: 12px;
+    }
+    .lotus{
+        font-size: 16px;
+        gap: 10px;
+        height: auto;
+
+    }
+    .item .itemTitle{
+        font-size: 16px;
+        width: fit-content;
+    }
+    .item {
+        width: 100%;
+        padding: 15px 40px;
+    }
+    .itemDescription{
+        font-size: 16px;
+        width: fit-content;
+    }
+    .button{
+        width: 100%;
+        height: 50px;
+    }
+}
+

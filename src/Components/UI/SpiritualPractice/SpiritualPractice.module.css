@@ -1,0 +1,135 @@
+.item{
+    width: 315px;
+    height: 364px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+.content {
+    background: var(--fon);
+    width: 311px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 24px 53px;
+    gap:16px;
+}
+.img{
+    border-radius: 100%;
+    background: #d9d9d9;
+    width: 137px;
+    height: 137px;
+    margin: 0 auto;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    height: 111px;
+}
+.title{
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+.description{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+.button{
+    border-radius: 10px;
+    width: 209px;
+    height: 36px;
+    border: none;
+    background: linear-gradient(212deg, #eec196 0%, #f3debc 25%, #fff8e8 50%, #f9edd2 75%, #dcb192 100%);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.1;
+    text-align: center;
+    color: var(--tekst);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        scale: 1.03;
+        box-shadow: 0 4px 8px rgba(238, 193, 150, 0.6);
+    }
+}
+
+
+@media (min-width: 960px) and (max-width: 1399px) {
+    .item{
+        width: 249px;
+        height: 368px;
+        margin-bottom: 19px;
+    }
+    .content{
+        width: 247px;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
+    .item{
+        width: 168px;
+        height: auto;
+        border: none;
+        background: unset;
+    }
+    .content{
+        width: 168px;
+        height: auto;
+        padding: 0;
+        border: none;
+        gap: 12px;
+        background: unset;
+    }
+    .img{
+        width: 105px;
+        height: 105px;
+    }
+    .text{
+        height: 120px;
+    }
+    .button{
+        width: 100%;
+    }
+    .description{
+        font-size: 14px;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 559px) {
+    .item{
+        width: 168px;
+        height: auto;
+        border: none;
+        background: unset;
+    }
+    .content{
+        width: 168px;
+        height: auto;
+        padding: 0;
+        border: none;
+        gap: 12px;
+        background: unset;
+    }
+    .img{
+        width: 105px;
+        height: 105px;
+    }
+    .text{
+        height: 120px;
+    }
+    .button{
+        width: 100%;
+    }
+    .description{
+        font-size: 14px;
+    }
+}

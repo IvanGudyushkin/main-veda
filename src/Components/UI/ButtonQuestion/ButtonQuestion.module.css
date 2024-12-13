@@ -1,0 +1,26 @@
+.button{
+    padding: unset;
+    background: unset;
+    border:unset;
+    cursor: pointer;
+    position: relative;
+}
+.window{
+    border-radius: 5px;
+    padding: 4px 8px;
+    border: solid var(--border) 1px;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--border);
+    position: absolute;
+    bottom: 9px;
+    right: 9px;
+    background: linear-gradient(212deg, #eec196 0%, #f3debc 25%, #fff8e8 50%, #f9edd2 75%, #dcb192 100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+.window.show {
+    opacity: 1;
+    visibility: visible;
+}

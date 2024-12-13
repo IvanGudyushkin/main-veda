@@ -1,0 +1,212 @@
+.block{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 40px;
+    width: 1320px;
+    margin: 0 auto;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+}
+.moreTitle{
+    display: flex;
+    gap:8px;
+    cursor: pointer;
+    align-items: center;
+    font-size: 24px;
+    scale: 1;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        scale: 1.1;
+    }
+}
+.title {
+    font-size: 36px;
+    font-weight: 400;
+}
+.container {
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.item{
+    width: 650px;
+    height: 141px;
+    display: flex;
+    gap: 20px;
+}
+.col1{
+    border:1px solid #cb8001;
+    background: var(--fon);
+    border-radius: 10px;
+    padding: 6px 16px;
+    width: 315px;
+    height: 141px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.more{
+    font-size: 18px;
+    text-align: center;
+    color: var(--tekst);
+    display: flex;
+    gap:6px;
+    height: fit-content;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.img {
+    align-self: flex-start;
+}
+.arrow{
+    width: 22px;
+    height: auto;
+}
+.col2{
+    width: 315px;
+    height: 141px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.itemTitle{
+    font-size: 24px;
+    color: var(--tekst);
+}
+.itemDescription{
+    font-size: 16px;
+}
+
+
+@media (min-width: 960px) and (max-width: 1399px) {
+    .block {
+        gap: 20px;
+        width: 880px;
+    }
+    .container{
+        gap: 12px 20px
+    }
+    .item {
+        width: 430px;
+        height: 158px;
+
+    }
+    .col1 {
+        width: 166px;
+        flex-direction: column;
+        position: relative;
+        height: 158px;
+    }
+    .img {
+        width: 122px;
+        height: 129px;
+    }
+    .more
+    {
+        position: absolute;
+        right: 8px;
+        bottom: -4px;
+        font-size: 12px;
+    }
+}
+@media (min-width: 560px) and (max-width: 959px) {
+    .block {
+        gap: 20px;
+        width: 480px;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .moreTitle{
+        font-size: 18px;
+        img{
+            height: 20px;
+        }
+    }
+    .container{
+        gap: 20px;
+        flex-direction: column;
+    }
+    .item {
+        width: 480px;
+        height: 102px;
+    }
+    .col1 {
+        width: 168px;
+        flex-direction: column;
+        position: relative;
+        height: 102px;
+    }
+    .img {
+        width: 68px;
+        height: auto;
+    }
+    .more
+    {
+        position: absolute;
+        right: 8px;
+        bottom: -6px;
+        font-size: 12px;
+    }
+    .itemTitle{
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 559px) {
+    .block {
+        gap: 20px;
+        width: calc(100% - 80px);
+    }
+    .row1{
+        flex-direction: column;
+        gap: 12px;
+    }
+    .title{
+        font-size: 18px;
+    }
+    .moreTitle{
+        font-size: 16px;
+        img{
+            height: 18px;
+        }
+    }
+    .container{
+        gap: 12px;
+        flex-direction: column;
+    }
+    .item {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .col1 {
+        width: 100%;
+        flex-direction: column;
+        position: relative;
+        height: 102px;
+    }
+    .img {
+        width: 74px;
+        height: auto;
+    }
+    .more
+    {
+        position: absolute;
+        right: 8px;
+        bottom: 0;
+        font-size: 12px;
+    }
+    .col2{
+        width: 100%;
+        height: auto;
+    }
+    .itemTitle{
+        font-size: 18px;
+    }
+}

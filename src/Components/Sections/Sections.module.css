@@ -1,0 +1,108 @@
+.block {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container{
+    display: flex;
+    gap:8px;
+    flex-direction: column;
+}
+.item{
+    width: 427px;
+    background: var(--gradient-border);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        scale: 1.03;
+        -webkit-box-shadow: rgba(241, 236, 229, 0.3960784314) 0px 0px 10px 0px;
+        box-shadow: 0px 6px 6px 0px rgba(98, 47, 0, 0.25);
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+}
+.background{
+    background: var(--gradient-background);
+    width: 423px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 13px;
+    padding: 6px 10px;
+    align-items: center;
+}
+.content{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.title {
+    font-weight: 700;
+    font-size: 16px;
+}
+.type{
+    font-weight: 700;
+    font-size: 16px;
+    background: linear-gradient(357deg, #2c1c0c 0%, #cb8001 14.29%, #cb8001 19.21%, #fcda84 100%, #f4d9c1 100%, #fcda84 100%, #cb8001 100%, #2c1c0c 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 960px) and (max-width: 1399px) {
+    .block{
+        width: 880px;
+    }
+    .item{
+        width: 280px;
+    }
+    .background{
+        width: 276px;
+    }
+}
+@media (min-width: 560px) and (max-width: 959px) {
+    .block {
+        flex-direction: column;
+        width: 480px;
+        margin: 0 auto;
+    }
+    .item{
+        width: 100%;
+    }
+    .background{
+        width: 100%;
+        height: 100%;
+    }
+    .col{
+        gap:12px
+    }
+}
+@media (min-width: 320px) and (max-width: 559px) {
+    .block {
+        flex-direction: column;
+        width: calc(100% - 80px);
+        margin: 0 auto;
+    }
+    .item{
+        width: 100%;
+    }
+    .background{
+        width: 100%;
+        height: 100%;
+    }
+    .col{
+        gap:12px
+    }
+}

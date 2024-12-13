@@ -1,0 +1,107 @@
+.header{
+    backdrop-filter: blur(8px);
+    background: var(--gradient-background-50);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 300;
+}
+.footer{
+    backdrop-filter: blur(8px);
+    background: var(--gradient-background-50);
+    width: 100vw;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    margin-top: 41px;
+}
+.footer .line{
+    position: absolute;
+    top:0;
+}
+.line{
+    height: 2px;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    background: var(--gradient-border);
+}
+.content{
+    display: flex;
+    gap:74px;
+}
+.link{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.1;
+    color: var(--tekst);
+    text-decoration: none;
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
+    .content{
+        gap:0;
+        justify-content: space-between;
+        width: 504px;
+    }
+}
+@media (min-width: 320px) and (max-width: 559px) {
+    .header{
+        height: auto;
+        min-height: 48px;
+    }
+    .footer .content{
+        gap:8px;
+        width: unset;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer{
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 162px;
+        padding: 20px;
+        margin: 0;
+    }
+    .link{
+        font-size: 16px;
+    }
+    .line{
+        left: 0;
+    }
+    .menu{
+        padding: unset;
+        background: unset;
+        margin: 16px 0 0 0;
+        border:unset;
+        height: fit-content;
+    }
+    .content{
+        width: calc(100% - 80px);
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-end;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+    .mobileMenu{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        align-items: flex-end;
+        margin-bottom: 20px;
+    }
+
+    .mobileMenu .link{
+        height: 38px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

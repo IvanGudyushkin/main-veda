@@ -1,0 +1,118 @@
+.block{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 1320px;
+    margin: 0 auto;
+}
+.title {
+    font-size: 36px;
+    font-weight: 400;
+}
+.content {
+    display: flex;
+    gap:40px;
+    flex-direction: column;
+    align-items: center;
+}
+.row1,
+.row2{
+    display: flex;
+    gap:52px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    width: 100px;
+    transition: 0.5s ease-in-out;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    -webkit-tap-highlight-color: transparent; /* убирает подсветку при касании */
+    touch-action: manipulation; /* убирает задержку и визуальные эффекты при касании */
+    &:hover{
+        scale: 1.05;
+    }
+}
+.item img {
+    pointer-events: none;
+}
+
+
+@media (min-width: 960px) and (max-width: 1399px) {
+    .block{
+        width: 880px;
+        gap:20px;
+    }
+    .title{
+        font-size: 32px;
+    }
+    .content {
+        gap:20px;
+    }
+    .row1,
+    .row2{
+        gap: 20px 37px;
+    }
+}
+
+
+@media (min-width: 560px) and (max-width: 959px) {
+    .block{
+        width: 480px;
+        gap:20px;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .content {
+        gap:10px;
+    }
+    .row1,
+    .row2
+    {
+        gap: 10px;
+    }
+    .item img  {
+        scale: 0.75;
+        object-fit: contain;
+    }
+    .item {
+        width: 100px;
+        height: 136px;
+        gap: 8px;
+    }
+}
+@media (min-width: 320px) and (max-width: 559px) {
+    .block{
+        width: calc(100% - 80px);
+        gap:20px;
+    }
+    .title{
+        font-size: 18px;
+    }
+    .content {
+        gap:20px;
+    }
+    .row1,
+    .row2
+    {
+        gap: 20px;
+    }
+    .item img  {
+        scale: 1;
+        object-fit: contain;
+    }
+    .item {
+        width: 110px;
+        height: 140px;
+        gap: 8px;
+    }
+}

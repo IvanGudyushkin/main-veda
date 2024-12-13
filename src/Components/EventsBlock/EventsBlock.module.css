@@ -1,0 +1,324 @@
+.block{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 1320px;
+    margin: 0 auto;
+}
+.title {
+    font-size: 36px;
+    font-weight: 400;
+}
+.content {
+    display: flex;
+    gap:20px
+}
+.col1 {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 523px;
+}
+.itemJyotish{
+    border-radius: 15px;
+    padding: 30px 40px;
+    width: 523px;
+    height: 204px;
+    border: 1px solid #FCDA84;
+    background-image: url("../../Assets/Images/jyotish.webp");
+    display: flex;
+    gap: 20px;
+}
+.emblem{
+    width: 63px;
+    height: 63px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 350px;
+}
+.itemTitle{
+    font-weight: 700;
+    font-size: 24px;
+    background: linear-gradient(179deg, #2c1c0c 0%, #cb8001 14%, #fcda84 30%, #fef4a4 48.5%, #fcda84 68.5%, #cb8001 84%, #2c1c0c 100%);;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.itemDescription{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--fon);
+}
+.containertags{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 8px;
+}
+.jyotishTag{
+    border-radius: 50px;
+    height: 32px;
+    padding: 8px;
+    background: var(--gradient-border);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0.85;
+    text-align: center;
+    color: var(--tekst);
+    transition: ease-in-out 0.3s;
+}
+.itemAstro{
+    border-radius: 15px;
+    padding: 30px 40px;
+    width: 523px;
+    height: 204px;
+    border: 1px solid #FCDA84;
+    background-image: url("../../Assets/Images/astro_forecast.webp");
+    display: flex;
+    gap: 20px;
+}
+.astroTag{
+    border-radius: 50px;
+    height: 32px;
+    padding: 6px 25px;
+    border: 2px solid  #ffe093;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0.85;
+    text-align: center;
+    color: #ffe093;
+    transition: ease-in-out 0.3s;
+}
+.astroTag:hover,
+.jyotishTag:hover{
+    scale: 1.1;
+    -webkit-box-shadow: rgba(241, 236, 229, 0.3960784314) 0px 0px 10px 0px;
+    box-shadow: 0px 6px 6px 0px rgba(98, 47, 0, 0.25);
+    user-select: none;
+    -moz-user-select: none; /* Для Firefox */
+    -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+    -ms-user-select: none; /* Для Internet Explorer/Edge */
+}
+.col2 {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    overflow: auto;
+    width: 777px;
+    height: 426px;
+}
+.eventCard {
+    border-radius: 10px;
+    width: 749px;
+    background: var(--fon);
+    border: var(--border) solid 1px; ;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.eventContent{
+    background: var(--fon);
+    display: flex;
+    gap: 20px;
+}
+.eventTitle {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.eventDescription {
+    font-size: 16px;
+
+}
+.eventInfo1,
+.eventInfo2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.eventInfo1{
+    width: 489px;
+}
+.eventInfo2 {
+    width:197px;
+    height: 58px;
+    align-self: center;
+}
+.eventDate {
+    font-size: 18px;
+    height: 27px;
+}
+.eventPrice {
+    font-size: 18px;
+    height: 27px;
+
+}
+
+.scroll-content {
+    margin-bottom: 10px; /* Добавление нижнего отступа между элементами */
+}
+
+/* Пример стилей для последнего элемента внутри скроллбара */
+.scroll-content:last-child {
+    margin-bottom: 0; /* Убираем отступ для последнего элемента */
+}
+
+@media (min-width: 960px) and (max-width: 1399px) {
+    .block {
+        width: 880px;
+        gap: 20px;
+    }
+
+    .content {
+        gap: 8px;
+    }
+
+    .col1 {
+        width: 440px;
+        gap: 8px;
+    }
+
+    .itemJyotish {
+        width: 440px;
+    }
+
+    .itemAstro {
+        width: 440px;
+    }
+
+    .emblem {
+        display: none;
+    }
+
+    .col2 {
+        width: 432px;
+        height: 416px;
+        gap: 8px;
+    }
+
+    .eventCard {
+        width: 413px;
+    }
+
+    .eventInfo2 {
+        gap: 8px;
+    }
+
+    .eventInfo2,
+    .eventDate,
+    .eventPrice {
+        height: auto;
+    }
+}
+@media (min-width: 560px) and (max-width: 959px) {
+    .block {
+        width: 480px;
+        gap: 20px;
+    }
+    .content {
+        gap: 8px;
+        flex-direction: column;
+    }
+    .col1 {
+        width: 480px;
+        gap: 8px;
+    }
+    .itemJyotish{
+        width: 480px;
+    }
+    .itemAstro{
+        width: 480px;
+    }
+    .emblem{
+        display: none;
+    }
+    .col2 {
+        width: 480px;
+        height: 200px;
+        gap:8px;
+    }
+    .eventCard{
+        width: 459px;
+    }
+    .eventInfo2{
+        gap:8px;
+    }
+    .eventInfo2,
+    .eventDate,
+    .eventPrice{
+        height: auto;
+    }
+    .title{
+        font-size: 24px;
+    }
+}
+@media (min-width: 320px) and (max-width: 559px) {
+    .block {
+        width: calc(100% - 80px);
+        gap: 20px;
+    }
+    .content {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .col1 {
+        width: 100%;
+        gap: 8px;
+    }
+    .itemJyotish{
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+    .itemAstro{
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+    .emblem{
+        display: none;
+    }
+    .col2 {
+        width: 100%;
+        height: 270px;
+        gap:8px;
+    }
+    .eventCard{
+        width: calc(100% - 15px);
+    }
+    .eventContent{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .containertags{
+        gap: 12px;
+        flex-direction: column;
+    }
+    .astroTag,
+    .jyotishTag{
+        width: fit-content;
+    }
+    .eventInfo1{
+        width: 100%;
+    }
+    .eventInfo2{
+        gap:8px;
+        align-self: flex-start;
+    }
+    .eventInfo2,
+    .eventDate,
+    .eventPrice{
+        height: auto;
+    }
+    .title{
+        font-size: 18px;
+    }
+}

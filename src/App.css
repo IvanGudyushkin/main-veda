@@ -1,0 +1,107 @@
+.containerbg-1 {
+    position: absolute;
+    z-index: -200;
+    top: -631px;
+    user-select: none;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 1492px;
+    height: 1479px;
+
+}
+.bg-1{
+    animation: rotate 270s infinite linear;
+    width: 1492px;
+    height: 1479px;
+}
+.containerbg-2 {
+    position: absolute;
+    z-index: -200;
+    top: 6450px;
+    user-select: none;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 1488px;
+    height: 1488px;
+
+}
+.bg-2{
+    animation: rotate 270s infinite linear;
+    width: 1488px;
+    height: 1488px;
+}
+
+.App {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    padding-top: 108px;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1399px) {
+    .App {
+        gap: 80px;
+    }
+    .containerbg-2{
+        top: 5950px;
+    }
+}
+@media (min-width: 560px) and (max-width: 959px) {
+    .App {
+        gap: 80px;
+    }
+
+    .containerbg-2 {
+        position: absolute;
+        z-index: -200;
+        top: 7050px;
+        user-select: none;
+        left: 50%;
+        transform: translatex(-50%);
+        width: 1100px;
+        height: 1100px;
+
+    }
+    .bg-2{
+        animation: rotate 270s infinite linear;
+        width: 1100px;
+        height: 1100px;
+    }
+}
+@media (min-width: 320px) and (max-width: 559px) {
+    .App {
+        gap: 80px;
+    }
+    .containerbg-1{
+        top:-160px
+    }
+    .containerbg-2 {
+        position: absolute;
+        z-index: -200;
+        top: 9550px;
+        user-select: none;
+        left: 50%;
+        transform: translatex(-50%);
+        width: 1100px;
+        height: 1100px;
+
+    }
+    .bg-2{
+        animation: rotate 270s infinite linear;
+        width: 1100px;
+        height: 1100px;
+    }
+}
